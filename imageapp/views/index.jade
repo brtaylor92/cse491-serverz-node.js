@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a(href='/upload') Upload an image
+  p The latest image is:
+  br
+  img(src=imgurl)

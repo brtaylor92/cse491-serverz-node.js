@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    p Select an image to upload:
+    form(action="/submit", method="post", enctype="multipart/form-data")
+        input(type="file", name="displayImage")
+        input(type="submit", name="submitImage")
